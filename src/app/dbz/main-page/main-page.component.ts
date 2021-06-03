@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Personaje } from '../interfaces/dbz.interface';
+import { DbzService } from '../services/dbz.service';
 
-interface Personaje{
-nombre:string;
-poder:number;
-
-}
 
 @Component({
   selector: 'app-main-page',
@@ -12,18 +9,15 @@ poder:number;
 })
 export class MainPageComponent {
 
+  
 nuevo:Personaje={
-  nombre:'Trunks',
-  poder:14000
+  nombre:'Maestro',
+  poder:5000
 }
 
 
+constructor(){
 
-agregar(){
-
-console.log(this.nuevo);
 }
-
-
 
 }
